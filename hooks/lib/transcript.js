@@ -15,6 +15,8 @@ function redactSecrets(s) {
     .replace(/\bxox[baprs]-[A-Za-z0-9-]{10,}/g, '[REDACTED]')
     .replace(/\bAIza[0-9A-Za-z_-]{20,}/g, '[REDACTED]')
     .replace(/\beyJ[A-Za-z0-9_-]{8,}\.[A-Za-z0-9_-]{8,}\.[A-Za-z0-9_-]{6,}/g, '[REDACTED JWT]')
+    .replace(/\b(authorization\s*[:=]\s*)(?:bearer|basic|token|digest)\s+\S+/gi, '$1[REDACTED]')
+    .replace(/\bbearer\s+[A-Za-z0-9._~+/-]{6,}=*/gi, 'Bearer [REDACTED]')
     .replace(/\b(api[_-]?key|secret|token|password|passwd|pwd|client[_-]?secret|authorization|bearer)\b\s*[:=]\s*["']?[^\s"']+/gi, '$1: [REDACTED]');
 }
 

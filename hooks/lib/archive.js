@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { parseTranscript } = require('./transcript');
 const { vaultPaths } = require('./paths');
 
@@ -41,7 +42,12 @@ function archiveSession(hook, opts = {}) {
     let cwd = hook.cwd || '';
     const reason = hook.reason || '';
 
-    let short = sid.replace(/[^a-zA-Z0-9]/g, '').slice(0, 8) || 'unknown';
+    // Real session id → stable, idempotent short. No id → hash the transcript
+    // path so each session still gets a unique, collision-free, stable name.
+    let short = sid.replace(/[^a-zA-Z0-9]/g, '').slice(0, 8);
+    if (!short || sid === 'unknown') {
+      short = crypto.createHash('sha1').update(String(tp || 'engram')).digest('hex').slice(0, 8);
+    }
 
     const { turns, toolCount, firstTs, firstCwd } = tp
       ? parseTranscript(tp)
