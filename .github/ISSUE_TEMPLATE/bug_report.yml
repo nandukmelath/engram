@@ -1,0 +1,36 @@
+name: Bug report
+description: Something in Engram isn't working
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! ⚠️ Issues are public — don't paste secrets. (Engram redacts vault notes, but not your issue text.)
+  - type: dropdown
+    id: install
+    attributes:
+      label: Install method
+      options:
+        - Claude Code plugin
+        - npm / npx
+        - cloned repo
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: OS + Node version
+      placeholder: "macOS 14, node 20.11"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, what happened instead? Paste `engram doctor` output if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce

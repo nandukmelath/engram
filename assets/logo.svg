@@ -1,0 +1,24 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Engram logo">
+  <defs>
+    <linearGradient id="g" x1="32" y1="24" x2="224" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+  <!-- vault crystal -->
+  <path d="M128 24 L212 72 V184 L128 232 L44 184 V72 Z" stroke="url(#g)" stroke-width="10" stroke-linejoin="round" fill="none"/>
+  <!-- memory graph: linked engrams -->
+  <g stroke="url(#g)" stroke-width="7" stroke-linecap="round">
+    <line x1="96" y1="104" x2="148" y2="84"/>
+    <line x1="148" y1="84" x2="168" y2="150"/>
+    <line x1="168" y1="150" x2="104" y2="168"/>
+    <line x1="104" y1="168" x2="96" y2="104"/>
+    <line x1="148" y1="84" x2="104" y2="168"/>
+  </g>
+  <g fill="url(#g)">
+    <circle cx="96" cy="104" r="14"/>
+    <circle cx="148" cy="84" r="12"/>
+    <circle cx="168" cy="150" r="13"/>
+    <circle cx="104" cy="168" r="11"/>
+  </g>
+</svg>

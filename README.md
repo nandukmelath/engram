@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🧠 Engram
+<img src="assets/logo.svg" width="104" alt="Engram logo" />
+
+# Engram
 
 ### Persistent memory for Claude Code — saved to your Obsidian vault.
 
@@ -134,6 +136,12 @@ Claude: Found 2 sessions. On 2026-06-03 you chose Razorpay over Stripe
 **Uninstall?** `npx engram uninstall` (or `/plugin uninstall engram@engram`). Your vault is never touched.
 
 ---
+
+## Star history
+
+<a href="https://star-history.com/#nandukmelath/engram&Date">
+  <img src="https://api.star-history.com/svg?repos=nandukmelath/engram&type=Date" width="620" alt="Star History Chart" />
+</a>
 
 ## Contributing
 

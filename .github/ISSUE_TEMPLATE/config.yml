@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions & questions
+    url: https://github.com/nandukmelath/engram/discussions
+    about: Ask questions, share your vault setup, or request support for another agent.
