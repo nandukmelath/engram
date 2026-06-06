@@ -1,0 +1,31 @@
+<svg width="820" height="430" viewBox="0 0 820 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Engram /recall demo">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="430" rx="14" fill="#0D1117"/>
+  <rect x="0.5" y="0.5" width="819" height="429" rx="14" fill="none" stroke="#30363D"/>
+  <!-- title bar -->
+  <circle cx="26" cy="26" r="6" fill="#FF5F56"/>
+  <circle cx="46" cy="26" r="6" fill="#FFBD2E"/>
+  <circle cx="66" cy="26" r="6" fill="#27C93F"/>
+  <text x="410" y="31" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8B949E">Claude Code — engram</text>
+  <line x1="0" y1="52" x2="820" y2="52" stroke="#30363D"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16">
+    <text x="28" y="92" fill="#8B949E">&gt; <tspan fill="url(#acc)" font-weight="bold">/recall</tspan> <tspan fill="#C9D1D9">the payment provider decision</tspan></text>
+    <text x="28" y="132" fill="#7EE787">●</text>
+    <text x="50" y="132" fill="#C9D1D9">Found 2 past sessions. Here's what you decided:</text>
+    <text x="50" y="170" fill="#C9D1D9">• Chose <tspan fill="#FFFFFF" font-weight="bold">Razorpay</tspan> over Stripe — Stripe's ₹15k UPI cap</text>
+    <text x="68" y="196" fill="#C9D1D9">blocked the membership flow.</text>
+    <text x="50" y="234" fill="#C9D1D9">• Built the booking flow on a Postgres</text>
+    <text x="68" y="260" fill="#C9D1D9">EXCLUDE constraint to stop double-bookings.</text>
+    <text x="50" y="300" fill="#8B949E">↳ Sessions/2026-06-03_1682c224.md</text>
+    <text x="50" y="324" fill="#8B949E">↳ Sessions/2026-06-04_dd4bb245.md</text>
+  </g>
+  <line x1="0" y1="356" x2="820" y2="356" stroke="#30363D"/>
+  <text x="28" y="392" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#6E7681">
+    Every session is archived to your Obsidian vault — recalled on demand.
+  </text>
+  <text x="792" y="392" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="url(#acc)" font-weight="bold">Engram</text>
+</svg>

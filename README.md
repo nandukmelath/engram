@@ -15,6 +15,10 @@ Cross-platform · zero-config · zero-dependency · MIT.
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](#contributing)
 [![GitHub stars](https://img.shields.io/github/stars/nandukmelath/engram?style=social)](https://github.com/nandukmelath/engram/stargazers)
 
+<br/>
+
+<img src="assets/demo.svg" width="680" alt="Engram /recall demo — Claude recalls past sessions from your Obsidian vault" />
+
 </div>
 
 ---
