@@ -1,0 +1,7 @@
+# Keep LF in the repo so shebangs and hooks work on macOS/Linux.
+* text=auto eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.sh   text eol=lf
+*.yml  text eol=lf

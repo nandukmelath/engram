@@ -1,0 +1,46 @@
+{
+  "name": "engram",
+  "version": "0.1.0",
+  "description": "Persistent memory for Claude Code — every session auto-saved to your Obsidian vault, recalled on demand. Cross-platform, zero-config, MIT.",
+  "type": "commonjs",
+  "bin": {
+    "engram": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "hooks",
+    "commands",
+    ".claude-plugin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "keywords": [
+    "claude-code",
+    "claude",
+    "obsidian",
+    "memory",
+    "second-brain",
+    "knowledge-base",
+    "ai",
+    "hooks",
+    "transcript",
+    "plugin",
+    "note-taking"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandukmelath/engram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nandukmelath/engram/issues"
+  },
+  "homepage": "https://github.com/nandukmelath/engram#readme",
+  "author": "Nandu (@nandukmelath)",
+  "license": "MIT"
+}

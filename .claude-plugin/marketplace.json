@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "engram",
+  "description": "Persistent memory for Claude Code, stored in your Obsidian vault.",
+  "owner": {
+    "name": "Nandu",
+    "url": "https://github.com/nandukmelath"
+  },
+  "plugins": [
+    {
+      "name": "engram",
+      "description": "Auto-archive every Claude Code session to Obsidian; recall it anytime with /recall.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
