@@ -71,8 +71,8 @@ As a Claude Code plugin:
 Or standalone (any agent that can call a command hook):
 
 ```bash
-npx engram init
-npx engram backfill   # imports all your existing sessions
+npx github:nandukmelath/engram init
+npx github:nandukmelath/engram backfill   # imports all your existing sessions
 ```
 
 Then open the vault folder in Obsidian → *Open folder as vault*.

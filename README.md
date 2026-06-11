@@ -55,16 +55,20 @@ In Claude Code:
 
 Restart Claude Code. That's it — every session from now on is archived, and recent work is recalled at startup.
 
-### Option B — npm  *(standalone / power features)*
+### Option B — CLI  *(standalone / power features)*
+
+Runs straight from the repo — no install step:
 
 ```bash
-npx engram init        # wire hooks + /recall, create the vault
-npx engram backfill    # import ALL your existing sessions
+npx github:nandukmelath/engram init        # wire hooks + /recall, create the vault
+npx github:nandukmelath/engram backfill    # import ALL your existing sessions
 ```
+
+Prefer a global command? `npm i -g @nandukmelath/engram`, then `engram init`.
 
 Then **open the vault folder in Obsidian** → *Open folder as vault* → pick `~/claude-code-memory`.
 
-> Want it somewhere else? `npx engram init --vault "~/Documents/My Vault"` or set `ENGRAM_VAULT`.
+> Want it somewhere else? `engram init --vault "~/Documents/My Vault"` or set `ENGRAM_VAULT`.
 
 ---
 
@@ -137,7 +141,7 @@ Claude: Found 2 sessions. On 2026-06-03 you chose Razorpay over Stripe
 
 **Other agents (Cursor, Codex…)?** The npm install is agent-agnostic for anything that can call a command hook; the plugin is Claude Code-specific.
 
-**Uninstall?** `npx engram uninstall` (or `/plugin uninstall engram@engram`). Your vault is never touched.
+**Uninstall?** `npx github:nandukmelath/engram uninstall` (or `/plugin uninstall engram@engram`). Your vault is never touched.
 
 ---
 

@@ -14,7 +14,7 @@ No `npm install` needed — there are zero runtime dependencies, and the tests u
 
 ## Guidelines
 
-- **No runtime dependencies.** The whole point is `npx engram` with nothing to install. Built-ins only.
+- **No runtime dependencies.** The whole point is `npx github:nandukmelath/engram` with nothing to install. Built-ins only.
 - **Hooks must silent-fail.** A crash in a hook must never block a Claude Code session. Wrap, log to the vault error log, `exit 0`.
 - **Cross-platform.** Resolve paths with `path`/`os`. Honor `CLAUDE_CONFIG_DIR` and `ENGRAM_VAULT`. CI runs on Linux, macOS, Windows.
 - **Add a test** for any parsing or redaction change (`test/run.js`).

@@ -1,8 +1,11 @@
 {
-  "name": "engram",
+  "name": "@nandukmelath/engram",
   "version": "0.1.0",
   "description": "Persistent memory for Claude Code — every session auto-saved to your Obsidian vault, recalled on demand. Cross-platform, zero-config, MIT.",
   "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "engram": "bin/cli.js"
   },

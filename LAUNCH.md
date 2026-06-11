@@ -10,7 +10,7 @@ Everything to launch Engram and give it the best shot at GitHub Trending. Copy-p
 
 - [ ] `npm test` green locally.
 - [ ] Record the demo GIF (see §5) and add it near the top of the README — **this is the single biggest lever for stars.**
-- [ ] `npm publish` so `npx engram` works (or remove npm lines from README until then).
+- [x] Bare `engram` on npm is taken (Tom Merrihew's 2014 pkg) → package scoped to `@nandukmelath/engram`; README CLI path uses `npx github:nandukmelath/engram` (works with zero publish). Optional: `npm publish --access public` to also ship the scoped name.
 - [ ] Enable CI badge (needs `gh auth refresh -s workflow`, then push `.github/workflows/ci.yml`).
 - [ ] Add a GitHub **social preview** image (Settings → General → Social preview) — use `assets/social.png` (1280×640).
 - [ ] Star your own repo. Get 3–5 friends to star *before* posting so it's not at 0.
@@ -43,7 +43,7 @@ few days back in, so the next session starts with context. A /recall command
 greps the whole history mid-session ("what did we decide about auth?").
 
 Design choices:
-- Zero dependencies. `npx engram init`, or install it as a Claude Code plugin.
+- Zero dependencies. `npx github:nandukmelath/engram init`, or install it as a Claude Code plugin.
 - Plain Markdown — no DB, no cloud, you own the files. Survives the 30-day purge.
 - Secrets (API keys, tokens, JWTs, private keys) are redacted before write.
 - Hooks silent-fail: a bug in Engram can never block your session.
@@ -76,7 +76,7 @@ Claude Code forgets everything when a session ends and purges transcripts after
 • /recall <topic> → searches your whole history mid-session, with citations
 • Secrets redacted before write; trivial sessions skipped
 
-Install is one line as a Claude Code plugin, or `npx engram init`. Zero deps,
+Install is one line as a Claude Code plugin, or `npx github:nandukmelath/engram init`. Zero deps,
 cross-platform, MIT. It also backfills all your existing sessions.
 
 Repo + demo: https://github.com/nandukmelath/engram
@@ -134,8 +134,8 @@ A GIF at the top of the README converts browsers → stargazers. Record a termin
 
 ```
 # 1. install
-npx engram init
-npx engram backfill
+npx github:nandukmelath/engram init
+npx github:nandukmelath/engram backfill
 
 # 2. open the vault in Obsidian (cut to the graph view + a session note)
 

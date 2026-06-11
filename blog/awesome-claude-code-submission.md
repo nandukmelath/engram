@@ -5,7 +5,7 @@
 non-compliant/self-promo submissions. Submit only when **all** are true:
 
 - [ ] Repo is past the age gate (created 2026-06-06 → safe after ~2026-06-20; re-read the exact checkbox first).
-- [ ] `npx engram` works (npm published) **or** the plugin install is verified.
+- [ ] `npx github:nandukmelath/engram` works **or** the plugin install is verified.
 - [ ] A few real stars (not 0) and at least one external user/issue.
 - [ ] All README links work.
 
